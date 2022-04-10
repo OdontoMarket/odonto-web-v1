@@ -7,7 +7,7 @@ type ContainerProps = {
 
 const Container: FC<ContainerProps> = (props: ContainerProps) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.Container}>
       {props.children}
     </div>
   );

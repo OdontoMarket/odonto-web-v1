@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Container } from '../components';
+import { Container, Header } from '../components';
 
 const Home: NextPage = () => {
   return (
@@ -11,10 +11,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
       <main>
+        <Header />
         <Container>
-          Odonto Market
         </Container>
       </main>
     </div>

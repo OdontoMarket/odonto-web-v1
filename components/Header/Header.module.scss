@@ -1,0 +1,49 @@
+@import '../../styles/units.scss';
+@import '../../styles/variables.scss';
+
+.Header {
+  background-color: $brand;
+  color: $white;
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+
+  .search {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  .filters {
+    display: none;
+  }
+}
+
+@include tablet {
+  .Header {
+    .search {
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+    }
+  }
+}
+
+@include laptop {
+  .Header {
+    .filters {
+      display: grid;
+      grid-auto-flow: column;
+      padding: 0 20px;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+@include desktop {
+  /*include if necessary*/
+}
+
+
+@include extra-large {
+  /*include if necessary*/
+}
