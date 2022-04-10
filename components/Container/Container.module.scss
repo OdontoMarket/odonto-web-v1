@@ -1,0 +1,30 @@
+@import '../../styles/units.scss';
+
+.container {
+  padding: 20px;
+}
+
+@include tablet {
+  .container {
+    padding: 20px 40px;
+  }
+}
+
+
+@include laptop {
+  .container {
+    padding: 20px 80px;
+  }
+}
+
+
+@include desktop {
+  .container {
+    padding: 20px 160px;
+  }
+}
+
+
+@include extra-large {
+  /*include if necessary*/
+}
